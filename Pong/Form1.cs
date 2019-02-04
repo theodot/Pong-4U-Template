@@ -143,10 +143,12 @@ namespace Pong
             p2.X = this.Width - PADDLE_EDGE - p2.Width;
             p2.Y = this.Height / 2 - p2.Height / 2;
 
-            // TODO set Width and Height of ball
-            // TODO set starting X position for ball to middle of screen, (use this.Width and ball.Width)
-            // TODO set starting Y position for ball to middle of screen, (use this.Height and ball.Height)
-
+            // Width and Height of ball
+            ball.Height = ball.Width = 10;
+            // set starting X position for ball to middle of screen, (use this.Width and ball.Width)
+            ball.X = this.Width/2 - ball.Width/2;
+            // et starting Y position for ball to middle of screen, (use this.Height and ball.Height)
+            ball.Y = this.Height / 2 - ball.Height/2;
         }
 
         /// <summary>
@@ -250,7 +252,7 @@ namespace Pong
             // TODO draw paddles using FillRectangle
 
             // TODO draw ball using FillRectangle
-
+            e.Graphics.FillEllipse(drawBrush, ball);
             // TODO draw scores to the screen using DrawString
         }
 
