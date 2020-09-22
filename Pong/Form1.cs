@@ -1,6 +1,6 @@
 ﻿/*
  * Description:     A basic PONG simulator
- * Author:           
+ * Author:          Mr. T.  
  * Date:            
  */
 
